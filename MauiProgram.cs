@@ -1,27 +1,27 @@
-﻿using DevExpress.Maui.CollectionView;
-using DevExpress.Maui.Charts;
-using Microsoft.Maui;
+﻿using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
+using Microsoft.Maui.Controls.Compatibility;
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Controls.Xaml;
-
-[assembly: XamlCompilationAttribute(XamlCompilationOptions.Compile)]
+using DevExpress.Maui.CollectionView;
+using DevExpress.Maui.Charts;
 
 namespace Stocks
 {
-    public static class MauiProgram
-    {
-        public static MauiApp CreateMauiApp()
-        {
-            var builder = MauiApp.CreateBuilder();
-            builder
-                .UseMauiApp<App>()
-                .ConfigureMauiHandlers((handlers) =>
-                    handlers.AddHandler(typeof(IDXCollectionView), typeof(DXCollectionViewHandler)))
-                .ConfigureMauiHandlers((handlers) =>
-                    handlers.AddHandler(typeof(ChartView), typeof(ChartViewHandler)))
-                .ConfigureFonts(fonts => fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"));
-            return builder.Build();
-        }
-    }
+	public class MauiProgram
+	{
+		public static MauiApp CreateMauiApp() {
+
+			var builder = MauiApp.CreateBuilder();
+			builder
+				.UseMauiApp<App>()
+				.ConfigureFonts(fonts => {
+					fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+				})
+				.ConfigureMauiHandlers(handlers => handlers.AddHandler<ChartView, ChartViewHandler>())
+				.ConfigureMauiHandlers(handlers => handlers.AddHandler<IDXCollectionView, DXCollectionViewHandler>());
+
+			return builder.Build();
+		}
+	}
 }

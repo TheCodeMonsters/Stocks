@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.Maui.Controls;
 
-namespace DevExpress.Maui.Demo.Stocks {
+namespace Stocks {
     public partial class SharedStyles : ResourceDictionary {
         public SharedStyles() {
             InitializeComponent();

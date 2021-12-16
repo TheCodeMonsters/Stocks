@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
     xmlns:dxc="clr-namespace:DevExpress.Maui.Charts;assembly=DevExpress.Maui.Charts"
-    xmlns:local="clr-namespace:DevExpress.Maui.Demo.Stocks"
+    xmlns:local="clr-namespace:Stocks"
     x:Class="DevExpress.Maui.Demo.Stocks.HistoricalDataPage"
     x:DataType="local:HistoricalDataViewModel"
     ios:Page.UseSafeArea="True"
