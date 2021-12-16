@@ -1,11 +1,15 @@
-﻿<ContentPage
-    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:d="http://schemas.microsoft.com/dotnet/2021/maui/design"
-    xmlns:dxcv="clr-namespace:DevExpress.Maui.CollectionView;assembly=DevExpress.Maui.CollectionView"
-    xmlns:local="clr-namespace:Stocks"
-    Title="Market"
-    BackgroundColor="{DynamicResource BackgroundColor}"
-    x:Class="Stocks.MainPage">
-    <dxcv:DXCollectionView/>
-</ContentPage>
+﻿<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:windows="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.WindowsSpecific;assembly=Microsoft.Maui.Controls"
+             xmlns:local="clr-namespace:Stocks"
+             x:Class="Stocks.App"
+             windows:Application.ImageDirectory="Assets">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <local:DarkTheme/>
+                <local:SharedStyles/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

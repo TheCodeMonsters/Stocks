@@ -68,10 +68,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Remove="symbols.json" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <EmbeddedResource Include="symbols.json" />
 	</ItemGroup>
 
