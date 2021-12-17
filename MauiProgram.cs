@@ -1,14 +1,11 @@
-﻿using Microsoft.Maui;
-using Microsoft.Maui.Hosting;
-using Microsoft.Maui.Controls.Compatibility;
+﻿using Microsoft.Maui.Hosting;
 using Microsoft.Maui.Controls.Hosting;
-using Microsoft.Maui.Controls.Xaml;
 using DevExpress.Maui.CollectionView;
 using DevExpress.Maui.Charts;
 
 namespace Stocks
 {
-	public class MauiProgram
+    public class MauiProgram
 	{
 		public static MauiApp CreateMauiApp() {
 

@@ -67,6 +67,7 @@
                             VerticalOptions="Start"
                             HorizontalOptions="EndAndExpand"
                             Margin="0,4,12,12">
+                            
                             <Image
                                 Source="{Binding Change, Converter={local:DoubleToImageSourceConverter
                                 PositiveValue='quote_arrow_up',
@@ -76,6 +77,7 @@
                                 HeightRequest="18"
                                 VerticalOptions="Start"
                                 Margin="0,0,3,0"/>
+                           
                             <Label
                                 Text="{Binding Change, StringFormat='{0:+0.00;-0.00;0.00}'}"
                                 TextColor="{Binding Change, Converter={local:DoubleToColorConverter
@@ -85,6 +87,7 @@
                                 VerticalOptions="Start"
                                 FontSize="Caption"
                                 Margin="3,0"/>
+                            
                             <Label
                                 Text="{Binding ChangePercent, StringFormat='{0:(+0.00%);(-0.00%);(0.00%)}'}"
                                 TextColor="{Binding Change, Converter={local:DoubleToColorConverter
@@ -95,6 +98,7 @@
                                 Margin="3,0,0,0"
                                 FontSize="Caption"/>
                         </StackLayout>
+                        
                         <BoxView
                             Grid.Row="2"
                             Grid.ColumnSpan="2"

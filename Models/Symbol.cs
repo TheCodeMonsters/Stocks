@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Stocks {
-    public class Symbol {
+namespace Stocks
+{
+    public class Symbol
+    {
         public string Ticker { get; set; }
         public string Name { get; set; }
-        public IList<StockPrice> Prices {  get; set; }
+        public IList<StockPrice> Prices { get; set; }
     }
-    public class StockPrice {
+    public class StockPrice
+    {
         public DateTime Date { get; set; }
         public double Open { get; set; }
         public double Close { get; set; }
